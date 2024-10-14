@@ -1,406 +1,207 @@
 .desktop-large {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  position: relative;
   background-color: #ffffff;
 }
 
-.desktop-large .frame {
+.frame {
   display: flex;
   flex-direction: column;
   width: 1920px;
-  align-items: flex-start;
-  position: relative;
 }
 
-.desktop-large .header {
+.header {
   display: flex;
   align-items: center;
-  gap: 579px;
-  padding: 37px 0px;
-  position: relative;
-  align-self: stretch;
+  justify-content: space-between; /* Changed from gap to justify-content */
+  padding: 37px 0;
   width: 100%;
-  flex: 0 0 auto;
   background-color: var(--preto);
 }
 
-.desktop-large .div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 360px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-
-.desktop-large .logo-provisria {
-  position: relative;
+.logo-provisria {
   width: 260px;
   height: 64px;
 }
 
-.desktop-large .frame-2 {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 40px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.desktop-large .text-wrapper {
-  position: relative;
+.text-wrapper, .text-wrapper-2, .text-wrapper-3 {
   width: fit-content;
-  margin-top: -1px;
   font-family: "Montserrat", Helvetica;
   font-weight: 500;
   color: var(--branco);
   font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
+  text-decoration: underline; /* Specific to text-wrapper-2 */
 }
 
-.desktop-large .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 500;
-  color: var(--branco);
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
+.text-wrapper-2 {
   text-decoration: underline;
 }
 
-.desktop-large .frame-3 {
+.frame-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 112px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
 }
 
-.desktop-large .banner-contato {
-  position: relative;
-  align-self: stretch;
+.banner-contato {
   width: 100%;
   height: 620px;
 }
 
-.desktop-large .frame-wrapper {
+.frame-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0px 360px;
-  position: relative;
-  align-self: stretch;
+  padding: 0 360px;
   width: 100%;
-  flex: 0 0 auto;
 }
 
-.desktop-large .frame-4 {
+.frame-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 56px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
 }
 
-.desktop-large .ttulo-padro {
+.ttulo-padro {
   display: flex;
   flex-direction: column;
-  min-width: 312px;
-  max-width: 600px;
   align-items: center;
   gap: 16px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
 }
 
-.desktop-large .destinos-da-excurs-o {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+.destinos-da-excurs-o {
   font-family: var(--h3-font-family);
   font-weight: var(--h3-font-weight);
   color: var(--grafite);
   font-size: var(--h3-font-size);
   text-align: center;
-  letter-spacing: var(--h3-letter-spacing);
-  line-height: var(--h3-line-height);
-  font-style: var(--h3-font-style);
 }
 
-.desktop-large .rectangle {
-  position: relative;
+.rectangle {
   width: 180px;
   height: 4px;
   background-color: var(--vermelho);
 }
 
-.desktop-large .div-wrapper {
-  display: inline-flex;
-  gap: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.desktop-large .p {
-  position: relative;
+.p {
   width: 1200px;
-  margin-top: -1px;
   font-family: var(--body-2-font-family);
   font-weight: var(--body-2-font-weight);
   color: var(--grafite);
   font-size: var(--body-2-font-size);
   text-align: center;
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  font-style: var(--body-2-font-style);
 }
 
-.desktop-large .frame-5 {
+.frame-5, .frame-6, .frame-7, .frame-8, .frame-10 {
   display: flex;
   flex-direction: column;
-  width: 790px;
   align-items: center;
   gap: 32px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.desktop-large .frame-6 {
-  display: flex;
-  gap: 64px;
-  align-self: stretch;
+.frame-5 {
+  width: 790px;
+}
+
+.frame-6 {
   width: 100%;
   flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.desktop-large .input {
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-}
-
-.desktop-large .text-wrapper-3 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: var(--body-2-font-family);
-  font-weight: var(--body-2-font-weight);
-  color: var(--grafite);
-  font-size: var(--body-2-font-size);
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  white-space: nowrap;
-  font-style: var(--body-2-font-style);
-}
-
-.desktop-large .line {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 3px;
-}
-
-.desktop-large .frame-7 {
-  display: flex;
+.frame-7 {
   align-items: flex-start;
   gap: 24px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
 }
 
-.desktop-large .input-2 {
-  flex: 1;
-  flex-grow: 1;
+.input, .input-2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  position: relative;
 }
 
-.desktop-large .seu-nome {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+.seu-nome, .seu-nome-2 {
   font-family: var(--body-2-font-family);
   font-weight: var(--body-2-font-weight);
   color: var(--cinza-escuro);
   font-size: var(--body-2-font-size);
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  white-space: nowrap;
-  font-style: var(--body-2-font-style);
 }
 
-.desktop-large .seu-nome-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: var(--body-2-font-family);
-  font-weight: var(--body-2-font-weight);
-  color: var(--cinza-escuro);
-  font-size: var(--body-2-font-size);
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  white-space: nowrap;
-  font-style: var(--body-2-font-style);
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-.desktop-large .rectangle-2 {
-  position: relative;
+.rectangle-2 {
   width: 790px;
   height: 90px;
   border-radius: 8px;
-  border: 2px solid;
-  border-color: var(--cinza-mdio);
+  border: 2px solid var(--cinza-mdio);
 }
 
-.desktop-large .boto {
+.boto {
   display: flex;
   flex-direction: column;
   width: 280px;
   align-items: center;
   justify-content: center;
-  gap: 32px;
   padding: 16px;
-  position: relative;
-  flex: 0 0 auto;
   background-color: var(--vermelho);
   border-radius: 8px;
 }
 
-.desktop-large .ver-detalhes {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+.ver-detalhes {
   font-family: var(--body2-bold-font-family);
   font-weight: var(--body2-bold-font-weight);
   color: var(--branco);
   font-size: var(--body2-bold-font-size);
   text-align: center;
-  letter-spacing: var(--body2-bold-letter-spacing);
-  line-height: var(--body2-bold-line-height);
-  white-space: nowrap;
-  font-style: var(--body2-bold-font-style);
 }
 
-.desktop-large .imagem-pr-rodap {
-  position: relative;
-  align-self: stretch;
+.imagem-pr-rodap {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
 
-.desktop-large .rodap {
+.rodap {
   display: flex;
   height: 232px;
   align-items: center;
   justify-content: space-between;
   padding: 32px 360px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
   background-color: var(--preto);
 }
 
-.desktop-large .frame-8 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.desktop-large .logo-branco {
-  position: relative;
+.logo-branco {
   width: 161.84px;
   height: 40px;
   object-fit: cover;
 }
 
-.desktop-large .frame-9 {
-  display: inline-flex;
+.frame-9 {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.desktop-large .text-wrapper-4 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+.text-wrapper-4, .text-wrapper-5 {
   font-family: var(--body-2-font-family);
   font-weight: var(--body-2-font-weight);
   color: var(--neutral-c);
   font-size: var(--body-2-font-size);
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  white-space: nowrap;
-  font-style: var(--body-2-font-style);
 }
 
-.desktop-large .text-wrapper-5 {
-  position: relative;
-  width: fit-content;
-  font-family: var(--body-2-font-family);
-  font-weight: var(--body-2-font-weight);
-  color: var(--neutral-c);
-  font-size: var(--body-2-font-size);
-  letter-spacing: var(--body-2-letter-spacing);
-  line-height: var(--body-2-line-height);
-  white-space: nowrap;
-  font-style: var(--body-2-font-style);
-}
-
-.desktop-large .frame-10 {
-  display: inline-flex;
+.frame-10 {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
-.desktop-large .img {
-  position: relative;
+.img {
   flex: 0 0 auto;
 }

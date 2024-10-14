@@ -98,6 +98,7 @@ travel_packages/                                # Directory for travel package p
   ├── style.css                                 # Specific stylesheet for the travel package pages.
   └── styleguide.css                            # Stylesheet for design guidelines for package pages.
 ```
+
 ## 🛠️ Open and Run the Project
 
 To start the project locally, follow the steps below:
